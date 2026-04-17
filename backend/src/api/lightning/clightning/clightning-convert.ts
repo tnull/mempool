@@ -48,6 +48,8 @@ export enum FeatureBits {
 	SimpleTaprootChannelsOptionalFinal = 81,
 	SimpleTaprootChannelsRequiredStaging = 180,
 	SimpleTaprootChannelsOptionalStaging = 181,
+	OptionSupportsLspsRequired = 728,
+	OptionSupportsLspsOptional = 729,
 	MaxBolt11Feature = 5114,
 };
 
@@ -93,6 +95,8 @@ export const FeaturesMap = new Map<FeatureBits, string>([
 	[FeatureBits.SimpleTaprootChannelsOptionalFinal, 'taproot-channels'],
 	[FeatureBits.SimpleTaprootChannelsRequiredStaging, 'taproot-channels-staging'],
 	[FeatureBits.SimpleTaprootChannelsOptionalStaging, 'taproot-channels-staging'],
+	[FeatureBits.OptionSupportsLspsRequired, 'option-supports-lsps'],
+	[FeatureBits.OptionSupportsLspsOptional, 'option-supports-lsps'],
 ]);
 
 /**
